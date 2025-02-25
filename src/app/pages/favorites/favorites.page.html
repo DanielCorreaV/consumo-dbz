@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+    <!-- Barra de búsqueda -->
+    
+    <!-- Contenedor con grid optimizado -->
+    <ion-grid class="custom-grid">
+        <ion-row>
+            @for (character of Characters; track character.id) {
+                <ion-col size="12" size-md="6" size-lg="4" size-xl="3" routerLink="/views/{{character.id}}">
+                    <app-character-card [character]="character"></app-character-card>
+                </ion-col>
+            }
+        </ion-row>
+    </ion-grid>
+
+    <!-- Scroll infinito -->
+    <ion-infinite-scroll threshold="25%" position="bottom" >
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+    <app-footer></app-footer>
+</ion-content>
+
+

@@ -1,0 +1,55 @@
+ion-header {
+  --background: #282c34; /* Ajusta el color de fondo si es necesario */
+}
+
+ion-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+/* Centrar el logo dentro del ion-title */
+ion-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* Permite que el título ocupe espacio y mantenga el logo centrado */
+  text-align: center;
+}
+
+.logo {
+  max-height: 40px; /* Ajusta el tamaño según sea necesario */
+  max-width: 150px;
+}
+
+/* Ajustar los botones en pantallas pequeñas */
+ion-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+ion-button {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+ion-icon {
+  font-size: 18px;
+}
+
+/* En pantallas pequeñas, los botones pueden ocupar más espacio */
+@media (max-width: 768px) {
+  ion-toolbar {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  ion-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+}

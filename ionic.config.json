@@ -1,0 +1,7 @@
+{
+  "name": "DBZ-apires",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

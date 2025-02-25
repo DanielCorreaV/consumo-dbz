@@ -1,0 +1,42 @@
+<app-header></app-header>
+
+<ion-content class="character-view">
+  <ion-grid class="content">
+    <ion-row>
+      <!-- Imagen del personaje -->
+      <ion-col size-md="6" size="12" class="image-box">
+        <img [src]="character.image" alt="{{ character.name }}">
+      </ion-col>
+
+      <!-- Cuadro de información -->
+      <ion-col size-md="6" size="12" class="info-box">
+        <h2>{{ character.name }}</h2>
+        <hr>
+        <div class="description">
+          <p>{{ character.description }}</p>
+        </div>
+        <hr>
+
+        <p><strong>Gender:</strong> {{ character.gender }}</p>
+        <p><strong>Race:</strong> {{ character.race }}</p>
+        <p><strong>Power Level:</strong> {{ character.ki }}</p>
+        <p><strong>Maximum Power Level:</strong> {{ character.maxKi }}</p>
+        <p><strong>Affiliation:</strong> {{ character.affiliation }}</p>
+
+        <!-- Botón de favoritos -->
+        <ion-button [ngClass]="favoriteClass" (click)="admFavorites()">
+          {{ favoriteContent }}
+        </ion-button>
+        
+        <ion-button (click)="goBack()" class="back-button">
+          <ion-icon name="arrow-back-outline"></ion-icon> Go Back
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <app-footer></app-footer>
+</ion-content>
+
+
+
+

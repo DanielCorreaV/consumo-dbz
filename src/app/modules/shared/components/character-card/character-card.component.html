@@ -1,0 +1,17 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>{{ character.name }}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <img src="{{character.image}}" alt="{{character.name}}">
+    <div class="info">
+      
+      <label for="gender">Gender: {{ character.gender }}</label>
+      <label for="gender">Race: {{ character.race }}</label>
+    </div>
+    
+    <ion-button expand="full" class="mostrar" >Mostrar</ion-button>
+    <ion-button expand="full" [class]="favoriteClass" >{{favoriteContent}}</ion-button>
+  </ion-card-content>
+</ion-card>
