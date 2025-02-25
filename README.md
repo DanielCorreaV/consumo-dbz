@@ -36,20 +36,23 @@ NOTA: se requiere versiones de Angular/ionic 17 o superior
 ### ⚙️ **Pasos de Instalación**
 1. Clona este repositorio:  
    ```sh
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/DanielCorreaV/consumo-dbz.git
    ```
 2. Entra al directorio del proyecto:  
    ```sh
-   cd nombre-del-proyecto
+   cd consumo-dbz
    ```
 3. Instala las dependencias:  
    ```sh
+   npm install 
+   ```
+    ```sh
    npm install -g @ionic/cli
    ```
       ```sh
    npm install -g @angular/cli
    ```
-4. Ejecuta la aplicación en modo desarrollo:  
+5. Ejecuta la aplicación en modo desarrollo:  
    ```sh
    ionic serve
    ```
